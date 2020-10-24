@@ -1,0 +1,63 @@
+video-type h3 {
+    font-family: Avenir LT W01_85 Heavy1475544;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 0 0 5px;
+	color:#5B738A;
+}
+
+.video-type a {
+    color: #5B738A;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.video-slide {
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 953px;
+    position: relative;
+    border: 0;
+    padding-top: 10px;
+}
+
+.video-slide video {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+.video-slide:nth-child(odd){
+	  &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to left, #7c4490 0%, #00c9c9 100%);
+    }
+}
+.video-slide:nth-child(even) {
+	  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #7c4490 0%, #00c9c9 100%);
+  }
+}
+
+.video-type {
+    display: inline-block;
+    margin: 25px;
+    max-width: 230px;
+    text-align: left;
+    vertical-align: bottom;
+}
+.left .video-type {
+    bottom: 0;
+    left: 68.6%;
+    position: absolute;
+}
